@@ -37,7 +37,7 @@ const About = () => {
         <div className="about-container">
           <div className="about-image">
             <div className="img-card">
-              <img src="/hand.png" alt="Digital Hand Illustrating Technology" />
+              <img src="hand.png" alt="Digital Hand Illustrating Technology" />
             </div>
           </div>
 

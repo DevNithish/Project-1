@@ -26,7 +26,7 @@ const Navbar = () => {
         </button>
 
         <div className={`navbar-links ${menuOpen ? "is-open" : ""}`}>
-          <a href="/" onClick={handleLinkClick}>
+          <a href="#Home" onClick={handleLinkClick}>
             Home
           </a>
           <a href="#Features" onClick={handleLinkClick}>

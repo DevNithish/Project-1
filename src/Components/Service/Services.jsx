@@ -4,27 +4,27 @@ import { useIntersectionObserver } from "../About/useIntersectionObserver";
 
 const servicesData = [
   {
-    imgSrc: "/Web Application Development.png",
+    imgSrc: "Web Application Development.png",
     alt: "Web Development Icon",
     title: "Web Application Development",
   },
   {
-    imgSrc: "/Mobile Application Developments.png",
+    imgSrc: "Mobile Application Developments.png",
     alt: "Mobile Development Icon",
     title: "Mobile Application Development",
   },
   {
-    imgSrc: "/Search Engine Optimization.png",
+    imgSrc: "Search Engine Optimization.png",
     alt: "SEO Icon",
     title: "Search Engine Optimization",
   },
   {
-    imgSrc: "/DevOps Engineering.png",
+    imgSrc: "DevOps Engineering.png",
     alt: "DevOps Icon",
     title: "DevOps Engineering",
   },
   {
-    imgSrc: "/Custom Enterprise Solutions.png",
+    imgSrc: "Custom Enterprise Solutions.png",
     alt: "Enterprise Solutions Icon",
     title: "Custom Enterprise Solutions",
   },

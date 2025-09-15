@@ -3,16 +3,16 @@ import "./Technologies.css";
 import { useIntersectionObserver } from "../About/useIntersectionObserver";
 
 const technologies = [
-  { src: "/icons8-react-native-48.jpeg", name: "React" },
-  { src: "/icons8-angularjs-48.jpeg", name: "Angular" },
-  { src: "/icons8-next.js-64.jpeg", name: "Next.js" },
-  { src: "/icons8-node-js-48.jpeg", name: "Node.js" },
-  { src: "/icons8-python-48.jpeg", name: "Python" },
-  { src: "/icons8-django-48.jpeg", name: "Django" },
-  { src: "/icons8-mongo-db-48.jpeg", name: "MongoDB" },
-  { src: "/icons8-css3-48.jpeg", name: "CSS3" },
-  { src: "/icons8-html-5-48 (1).jpeg", name: "HTML5" },
-  { src: "/icons8-wordpress-48.jpeg", name: "WordPress" },
+  { src: "icons8-react-native-48.jpeg", name: "React" },
+  { src: "icons8-angularjs-48.jpeg", name: "Angular" },
+  { src: "icons8-next.js-64.jpeg", name: "Next.js" },
+  { src: "icons8-node-js-48.jpeg", name: "Node.js" },
+  { src: "icons8-python-48.jpeg", name: "Python" },
+  { src: "icons8-django-48.jpeg", name: "Django" },
+  { src: "icons8-mongo-db-48.jpeg", name: "MongoDB" },
+  { src: "icons8-css3-48.jpeg", name: "CSS3" },
+  { src: "icons8-html-5-48 (1).jpeg", name: "HTML5" },
+  { src: "icons8-wordpress-48.jpeg", name: "WordPress" },
 ];
 
 const Technologies = () => {
