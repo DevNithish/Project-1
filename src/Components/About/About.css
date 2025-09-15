@@ -14,7 +14,6 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  scroll-margin-top: var(--navbar-height);
   overflow: hidden;
 }
 
@@ -178,9 +177,13 @@
     text-align: center;
     gap: 3rem;
   }
+  .img-card {
+    max-height: 450px;
+    object-fit: cover;
+  }
   .about-image {
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
   }
   .img-card:hover {
     transform: scale(1.05);

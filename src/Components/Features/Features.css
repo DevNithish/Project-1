@@ -1,0 +1,100 @@
+.web-design-section {
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.web-design-title-container {
+  margin-bottom: 4rem;
+}
+
+.section-subtitle {
+  /* ... same as before ... */
+}
+.section-main-title {
+  /* ... same as before ... */
+}
+
+/* ⭐ 1. Base Grid Layout (Mobile-First) */
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to a single column */
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  color: var(--color-dark);
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Stable Spotlight Hover Effect */
+.features-grid:hover > .feature-card:not(:hover) {
+  opacity: 0.6;
+}
+.features-grid > .feature-card:hover {
+  opacity: 1;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: clamp(2.25rem, 5vw, 2.75rem);
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+.feature-card:hover .feature-icon {
+  transform: scale(1.4);
+  color: red;
+}
+
+.feature-title {
+  font-weight: 600;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  line-height: 1.4;
+  color: var(--color-dark);
+  margin: 0;
+}
+
+/* On-Scroll Animations */
+/* ... same animation styles as before ... */
+
+/* ⭐ 2. Multi-Step Responsive Adjustments */
+
+/* For Larger Phones (2 columns) */
+@media (min-width: 576px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For Tablets (3 columns) */
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For Desktops (all 5 columns) */
+@media (min-width: 1200px) {
+  .features-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

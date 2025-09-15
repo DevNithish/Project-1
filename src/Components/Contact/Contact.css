@@ -3,7 +3,6 @@
   box-sizing: border-box;
   background-color: var(--color-light);
   color: var(--color-dark);
-  scroll-margin-top: var(--navbar-height);
   overflow: hidden;
 }
 
