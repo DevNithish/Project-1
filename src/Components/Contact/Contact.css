@@ -1,0 +1,120 @@
+.contact-section {
+  padding: 5rem 2rem;
+  box-sizing: border-box;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  scroll-margin-top: var(--navbar-height);
+  overflow: hidden;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  font-size: 0.9rem;
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+.info-item i {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+.info-item p {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-side {
+  flex: 1 1 500px;
+}
+
+.image-side {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-side img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  outline: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #2563eb;
+  transform: translateY(-3px);
+}

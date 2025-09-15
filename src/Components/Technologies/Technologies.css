@@ -1,0 +1,123 @@
+.tech-section {
+  padding: 5rem 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  overflow: hidden;
+}
+
+.tech-title-container {
+  margin-bottom: 4rem;
+  padding: 0 2rem;
+}
+
+.tech-carousel-container {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  overflow-x: auto;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  perspective: 1500px;
+}
+
+.tech-carousel-container::-webkit-scrollbar {
+  display: none;
+}
+.tech-carousel-container {
+  scrollbar-width: none;
+}
+
+.tech-card {
+  flex: 0 0 180px;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  border: 1px solid #e5e7eb;
+  transform: rotateY(-15deg) scale(0.95);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.tech-carousel-container:hover > .tech-card {
+  transform: rotateY(-20deg);
+}
+.tech-carousel-container > .tech-card:hover {
+  transform: rotateY(0deg) scale(1.05) translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.tech-icon {
+  height: 45px;
+  width: auto;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.tech-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-dark);
+}
+
+.tech-title-container,
+.tech-carousel-container {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.tech-section.is-visible .tech-title-container {
+  opacity: 1;
+  transform: translateY(0);
+}
+.tech-section.is-visible .tech-carousel-container {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+@media (min-width: 768px) {
+  .tech-carousel-container {
+    gap: 2rem;
+  }
+  .tech-card {
+    flex: 0 0 200px;
+  }
+  .tech-icon {
+    height: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tech-carousel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow-x: visible;
+    mask-image: none;
+    perspective: none;
+  }
+  .tech-card,
+  .tech-carousel-container:hover > .tech-card {
+    transform: none;
+  }
+  .tech-card:hover {
+    transform: translateY(-10px);
+  }
+}

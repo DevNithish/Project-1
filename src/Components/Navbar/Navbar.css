@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.5rem 1.5rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-logo {
+  position: relative;
+  top: -31px;
+  height: 100px;
+  width: auto;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 999;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease-in-out;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+
+.navbar-links.is-open {
+  transform: translateY(0);
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.navbar-hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+  background: transparent;
+  border: none;
+  padding: 0;
+  position: relative;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-icon.is-open {
+  gap: 0;
+}
+
+.hamburger-icon.is-open span:nth-child(1) {
+  transform: rotate(45deg) translate(2px, 3px);
+}
+
+.hamburger-icon.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.is-open span:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, -3px);
+}
+
+.navbar-contact-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-contact-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0.5rem 2.5rem;
+  }
+
+  .navbar-right {
+    gap: 2.5rem;
+  }
+
+  .navbar-hamburger {
+    display: none;
+  }
+
+  .navbar-links {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    transform: translateY(0);
+    padding: 0;
+    box-shadow: none;
+    gap: 2.5rem;
+    z-index: 1000;
+  }
+
+  .navbar-links a {
+    font-size: 1.05rem;
+  }
+}

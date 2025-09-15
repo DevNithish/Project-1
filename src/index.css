@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap");
+
+:root {
+  --stat-font-family: "Inter", sans-serif;
+  --stat-primary-color: #3b82f6;
+  --stat-secondary-color: #06b6d4;
+  --stat-text-color: #ffffff;
+  --stat-shadow-color: rgba(0, 119, 204, 0.3);
+  --stat-bg-color: #f9fafb;
+  --stat-border-radius: 9999px;
+  --primary-color: #3b82f6;
+  --text-color-dark: #1f2937;
+  --text-color-light: #f9fafb;
+  --hero-font: "Poppins", sans-serif;
+  --teal: #18e0ff;
+  --bg-light: #ffffff;
+  --card-top: #06b3d6;
+  --card-bottom: #001f54;
+  --text-dark: #0f172a;
+  --text-light: #475569;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  --navbar-height: 2px;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #c5e2ff;
+  background-image: radial-gradient(circle at top left, #e0f2ff, #c5e2ff);
+  position: relative;
+  overflow-x: hidden;
+}
